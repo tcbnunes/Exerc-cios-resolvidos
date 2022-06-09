@@ -1,7 +1,7 @@
 /*
-Em diversas situações, é útil o uso de dígitos verificadores. Dígito
+Em diversas situações, é útil o uso de dígitos verificadores. D, ígito
 verificador ou algarismo de controle é um mecanismo de autenticação utilizado para
-verificar a validade e a autenticidade de um valor numérico, evitando dessa forma fraudes
+verificar a validade e a autenticidade de um valor numéricoevitando dessa forma fraudes
 ou erros de transmissão ou digitação. Uma das formas mais comuns de cálculo de dígito
 verificadores é o método conhecido por módulo 11. O cálculo do DV no módulo 11 é
 feito, é feito como se segue: para calcular o primeiro dígito verificador, cada dígito do
@@ -25,14 +25,27 @@ Agência      Alg.1     Alg. 2     Alg. 3      Alg. 4                     DV
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
+int agencia, alg1, alg2, alg3, alg4;
+int codigo;
 
 //ENTRADA DE VALORES
-
+printf("Insira os 4 primeiros digitos da agencia.\n");
+scanf("%d",&agencia);
 
 //CORPO DO ALGORITIMO
-
-
+alg1 = agencia/1000;
+alg2 = (agencia/100)-(alg1*10);
+alg3 = (agencia/10)-(alg1*100)-(alg2*10);
+alg4 = (agencia)-(alg1*1000)-(alg2*100)-(alg3*10);
+codigo = 5*alg1 + 4*alg2 + 3*alg3 + 2*alg4;
+codigo = 11-(codigo%11);
+printf("%d X\n",codigo);
 //SAIDA DE VALORES
+if (codigo==10){
+    printf("O numero da agencia e: %d%d%d%d X\n", alg1, alg2, alg3, alg4);
+}else{
+    printf("O numero da agencia e: %d%d%d%d %d\n", alg1, alg2, alg3, alg4, codigo);
+}
 
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
