@@ -5,13 +5,18 @@ perímetro.
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
+system("cls");
+
 float base, altura, area;
 double perimetro;
+
 printf("Insira os valores da base e algura do retangulo. \n");
 scanf("%f%f", &base,&altura);
+
 area  = base*altura;
 perimetro = (base+altura)*2;
 printf("Valor da area: %0.2f.\nValor do prerimetro:%0.2f.\n ", area, perimetro);
+
 system("PAUSE");
 return 0;
 }
