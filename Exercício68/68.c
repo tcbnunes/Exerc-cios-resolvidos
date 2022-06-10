@@ -17,7 +17,7 @@ system("cls");
 
 
 //SAIDA DE VALORES
-
+printf("\n");
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;

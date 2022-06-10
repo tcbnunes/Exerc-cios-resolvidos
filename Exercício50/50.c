@@ -17,8 +17,8 @@ int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
 unsigned int numero1, i, j;
-i = 0;
-j = 0;
+i = 1;
+j = 1;
 //ENTRADA DE VALORES
 do
 {
@@ -36,12 +36,12 @@ do
         }
         j++;
     }while (j<7);
- j = 0;
+ j = 1;
  i++;   
 } while (i <7);
 
 //SAIDA DE VALORES
-printf("\n.");
+printf("\n");
 
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");

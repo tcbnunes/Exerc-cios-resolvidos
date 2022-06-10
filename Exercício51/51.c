@@ -29,7 +29,7 @@ for (int v = 0; v < numero; v++){
 }
 
 //SAIDA DE VALORES
-printf("\n.");
+printf("\n");
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
