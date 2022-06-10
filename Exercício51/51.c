@@ -13,23 +13,28 @@ system("cls");
 unsigned int numero, i, j, k;
 i = 1;
 j = 0;
+
 //ENTRADA DE VALORES
 do
 {
     printf("Insira um numero de termos da sequencia.\n");
     scanf("%d", &numero);
+    fflush(stdin);
 } while (!(numero>0 && numero<10000));
-//CORPO DO ALGORITIMO
 
+//CORPO DO ALGORITIMO
 for (int v = 0; v < numero; v++){
     k=i;
-    printf("%d, ", i);
+    printf("%d", i);
+    if (v<(numero-1)){
+        printf(", ");
+    }
     i+=j;
     j=k;
 }
 
 //SAIDA DE VALORES
-printf("\n");
+printf("...\n");
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
