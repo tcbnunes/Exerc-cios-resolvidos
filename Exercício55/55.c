@@ -15,15 +15,35 @@ Escreva um programa que dado dois inteiros, verifique se eles são amigos. (1729
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
-
+unsigned int amigo1, amigo2, soma1, soma2, i;
+soma1 = 0;
+soma2 = 0;
 //ENTRADA DE VALORES
-
+printf("Insira o valor dos dois numeros inteiros para veriricacao. \n");
+scanf("%d%d", &amigo1, &amigo2);
 
 //CORPO DO ALGORITIMO
-
+for(i = 1; i <amigo1; i++){
+    if(amigo1%i==0){
+    soma1 = soma1 + i;
+}
+}
+for(i = 1; i <amigo2; i++){
+    if(amigo2%i==0){
+    soma2 = soma2 + i;
+}
+}
 
 //SAIDA DE VALORES
+if(amigo1==soma2 && amigo2==soma1){
+    printf("Os numero sao amigos.\n");
+}
+else
+{
+    printf("Os numero nao sao amigos.\n");
+}
 printf("\n");
+
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
