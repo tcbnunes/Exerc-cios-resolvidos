@@ -9,15 +9,13 @@ posição (um por linha).
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
-
-//ENTRADA DE VALORES
-
-
-//CORPO DO ALGORITIMO
-
+int i[20];
 
 //SAIDA DE VALORES
-printf("\n");
+for(int n = 0; n<20; n++){
+    i[n] = 0;
+    printf("POSICAO: %d  VALOR: %d\n", n, i[n]);
+}
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
