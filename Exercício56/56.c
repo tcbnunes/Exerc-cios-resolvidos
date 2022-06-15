@@ -11,15 +11,30 @@ igual à 6 (1 + 2 + 3 = 6). Outro exemplo é o número 28, cujos divisores próp
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
+unsigned int numero, soma, i;
+soma = 0;
 
 //ENTRADA DE VALORES
-
+printf("Insira o valor do numero inteiros para veriricacao. \n");
+scanf("%d", &numero);
 
 //CORPO DO ALGORITIMO
-
+for(i = 1; i <numero; i++){
+    if(numero%i==0){
+    soma += i;
+}
+}
 
 //SAIDA DE VALORES
+if(numero==soma){
+    printf("O numero e perfeito.\n");
+}
+else
+{
+    printf("O numero nao e perfeito.\n");
+}
 printf("\n");
+
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
