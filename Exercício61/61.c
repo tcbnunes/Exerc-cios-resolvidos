@@ -14,7 +14,7 @@ int i[20];
 //SAIDA DE VALORES
 for(int n = 0; n<20; n++){
     i[n] = 0;
-    printf("POSICAO: %d  VALOR: %d\n", n, i[n]);
+    printf("POSICAO: %d  VALOR: %d\n", n+1, i[n]);
 }
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");

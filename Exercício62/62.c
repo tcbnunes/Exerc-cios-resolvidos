@@ -8,15 +8,22 @@ são elementos do array. Imprima esta quantidade.
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
+int i[10];
+int pares = 0;
 
 //ENTRADA DE VALORES
-
-
-//CORPO DO ALGORITIMO
-
+printf("Insira os valores de 10 numeros inteiros.\n");
+for(int n = 0; n<10; n++){
+    scanf("%d", &i[n]);
+    if (i[n]%2==0)
+    {
+        pares++;
+    }
+}
 
 //SAIDA DE VALORES
-printf("\n");
+printf("O array possui %d numeros pares.\n", pares);
+
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
