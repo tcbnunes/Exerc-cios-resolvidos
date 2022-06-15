@@ -9,16 +9,22 @@ série (N sendo informado durante a execução do algoritmo)
 #include <stdlib.h>
 int main(){
 system("cls");
-//DECLARAÇÃO DE VARIAVEIS
+unsigned int N, i;
+float soma;
+soma = 0;
 
 //ENTRADA DE VALORES
-
+printf("Insira o valor dos termos para exibir o somatorio. \n");
+scanf("%d", &N);
 
 //CORPO DO ALGORITIMO
 
-
-//SAIDA DE VALORES
-printf("\n");
+for(i = 1; i <=N; i++){
+    if (i%2!=0){
+       soma = soma + (pow(-1,i+2)/i);
+       printf("O valor do somatorio e : %f.\n", soma*4);
+    }
+}
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
