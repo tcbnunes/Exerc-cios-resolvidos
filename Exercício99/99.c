@@ -1,9 +1,13 @@
 /*
-A famosa conjectura de Goldbach diz que todo inteiro par maior que 2 é soma de dois 
-números primos. Testes foram feitos, mas ainda não se achou um contra-exemplo. 
-Escreva um programa mostrando que a afirmação é verdadeira para todo número par 
-entre 500 e 1000. O programa deve imprimir o número par e os dois primos que somados 
-dão o número par.
+Escrever  um  algoritmo  e  implementá-lo  em  linguagem  C  que  dada  uma  matriz  N  X  N, 
+contendo,  em  cada  linha,  as  idades  do  homem  e  da  mulher  no  casamento,  criar  uma 
+matriz de freqüência de idade de casamento, com as contagens para cada combinação de 
+idades.  As  idades  variam  de  18  até  30.    Os  pares  de  idade  devem  ser  lidos  até  que  se 
+informe  um  valor  inválido  para  a  idade  de  qualquer  dos  dois  nubentes.  Em  seguida,  o 
+programa deverá informar: 
+(1)  Qual a idade mais freqüente de casamento dos homens  
+(2)  Qual a idade mais freqüente de casamento das mulheres  
+(3)  Qual a combinação mais freqüente de idades de casamento 
 */
 //INICIALIZAÇÃO DO ALGORITIMO
 #include <stdio.h>

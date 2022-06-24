@@ -1,9 +1,7 @@
 /*
-A famosa conjectura de Goldbach diz que todo inteiro par maior que 2 é soma de dois 
-números primos. Testes foram feitos, mas ainda não se achou um contra-exemplo. 
-Escreva um programa mostrando que a afirmação é verdadeira para todo número par 
-entre 500 e 1000. O programa deve imprimir o número par e os dois primos que somados 
-dão o número par.
+Elabore um programa em C, para ler valores e armazená-los em uma matriz 5 x 5. Após o 
+programa  deverá  responder  se  a  matriz  é  ou  não  uma  matriz  simétrica.  Uma  matriz 
+simétrica possui a mesma composição de valores abaixo e acima da diagonal principal.
 */
 //INICIALIZAÇÃO DO ALGORITIMO
 #include <stdio.h>
