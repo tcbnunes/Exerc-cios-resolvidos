@@ -8,25 +8,30 @@ do array é de 100 posições (carga de array com sentinela).
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
-int variavel [100];
+int valor [100];
 int contador;
 contador = 0;
+int teste = 0;
 
 //ENTRADA DE VALORES
-printf("Insira os valores inteiros do vetor.\n");
+printf("Insira os valores inteiros do vetor.\nInsira 0 para menu de saida.\n");
 do{
-    if (i==100){
-        printf("Numero de valores maximo atingido.\n")
+    if (contador==5){
+        printf("Numero de valores maximo atingido.\n");
         break;
     }
-    scanf("%d", &valor[i]);
+    scanf("%d", &valor[contador]);
+    fflush(stdin);
+    if (valor[contador]==0){
+        int teste;
+        printf("Insira o valor do indice desejado.\n0. Voce deseja inserir 0 no seu vetor?\n1. Voce deseja encerrar o seu vetor?\n");
+        scanf("%d", &teste);
+    }
     contador++;
-    i++;
-}while()
-//CORPO DO ALGORITIMO
-
+}while(!teste);
 
 //SAIDA DE VALORES
+printf("Foram inseridos %d inteiros no vetor\n", contador);
 printf("\n");
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
