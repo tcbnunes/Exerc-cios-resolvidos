@@ -8,7 +8,7 @@ existem nesta string
 int main(){
 system("cls");
 //DECLARAÇÃO DE VARIAVEIS
-
+int vetor [4];
 //ENTRADA DE VALORES
 
 
@@ -16,7 +16,7 @@ system("cls");
 
 
 //SAIDA DE VALORES
-printf("\n");
+printf("%d %d\n", vetor[0], vetor[3]);
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;

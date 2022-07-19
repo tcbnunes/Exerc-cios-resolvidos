@@ -35,8 +35,7 @@ if (verifica==-1)
     printf("O numero ocorre na posicao %d do vetor\n", verifica);
 }
 
-printf("\n");
+printf("");
 //ENCERRAMENTO DO ALGORITIMO
 system("PAUSE");
 return 0;
-}
